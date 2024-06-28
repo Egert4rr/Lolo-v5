@@ -1,0 +1,54 @@
+.feedManager {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feedInput {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.addButton {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.feedList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feedListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.removeButton {
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
