@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import styles from "@/components/Article.module.css";
 
 const ArticlePage = () => {
   const router = useRouter();
@@ -29,13 +30,19 @@ const ArticlePage = () => {
   };
 
   if (!article) {
-    return <div>Loading...</div>;
+    return <div className={styles.loading}>Loading...</div>;
   }
 
   return (
-    <div>
-      <h1>{article.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: article.content }} />
+    <div className={styles.container}>
+      <button className={styles.backButton} onClick={() => router.back()}>
+        &larr; Back
+      </button>
+      <h1 className={styles.title}>{article.title}</h1>
+      <div
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      />
     </div>
   );
 };
